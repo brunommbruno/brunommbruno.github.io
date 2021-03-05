@@ -12,6 +12,13 @@
   letter-spacing: 0.2rem;
 }
 
+.nav {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  text-align: right;
+}
+
 .bottom-header {
   position: absolute;
   bottom: 0;
@@ -98,7 +105,18 @@
 
 @media only screen and (max-width: 500px) {
   .nav {
-    display: none;
+    display: inline;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav ul {
+    padding: 0;
+  }
+
+  .nav li {
+    display: inline;
   }
 
   #footer {
@@ -107,6 +125,43 @@
 
   .col {
     margin-bottom: 2rem;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .about .intro {
+    margin-top: 8rem;
+  }
+
+  .skills {
+    display: block;
+  }
+
+  .skills .stack {
+    margin-top: 8rem;
+  }
+
+  .project-a .col {
+    flex-grow: 0;
+    flex: 0;
+  }
+
+  .project-b {
+    display: block;
+  }
+
+  .project-b .img {
+    margin-top: 30vh;
+  }
+
+  .about .bottom-header {
+    right: 40%;
+  }
+
+  .skills .bottom-header {
+    right: 36%;
   }
 }
 
@@ -293,13 +348,6 @@ h2 {
 #footer a {
   font-size: 2.5rem;
   text-decoration: none;
-}
-
-.nav {
-  position: fixed;
-  right: 0;
-  top: 40%;
-  text-align: right;
 }
 
 .nav ul {
